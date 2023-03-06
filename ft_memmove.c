@@ -6,29 +6,33 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:42:46 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:42:48 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/03/06 08:31:21 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(char *dst, const char *src, int len)
+void	*ft_memmove(void *dst, const void *src, int len)
 {
-	int	i;
+	int		i;
+	char	*c_dst;
+	char	*c_src;
 
 	i = 0;
-	if (dst == src)
+	c_dst = (char *)dst;
+	c_src = (char *)src;
+	if (c_dst == c_src)
 		return (dst);
-	if (dst > src)
+	if (c_dst > c_src)
 	{
 		while (len--)
-			dst[len] = src[len];
+			c_dst[len] = c_src[len];
 	}
 	else
 	{
 		while (i < len)
 		{
-			dst[i] = src[i];
+			c_dst[i] = c_src[i];
 			i++;
 		}
 	}
-	return (dst);
+	return ((void *)dst);
 }
