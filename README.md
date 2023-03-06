@@ -1,4 +1,4 @@
-<h1>Libft</h1>
+<h1>My Libft for 42 🔭</h1>
 Libft is a project from the 42 school curriculum that requires you to recreate some of the standard C library functions.
 
 <h2>Files</h2>
