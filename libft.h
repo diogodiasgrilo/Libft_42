@@ -6,7 +6,7 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:44:30 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/06 08:41:03 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/03/06 08:50:25 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				*ft_calloc(int count, int size);
 char				*ft_strchr(const char *s, int c);
+char				*ft_strrchr(const char *s, int c);
 char				**ft_split(char const *s, char c);
 void				*ft_memset(void *b, int c, int len);
 void				*ft_memchr(const void *s, int c, int n);
