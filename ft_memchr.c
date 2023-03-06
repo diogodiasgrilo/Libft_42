@@ -6,13 +6,13 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:42:31 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:42:33 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/03/06 08:40:06 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const char *s, int c, int n)
+void	*ft_memchr(const void *s, int c, int n)
 {
 	int					i;
 	unsigned char		*s1;
