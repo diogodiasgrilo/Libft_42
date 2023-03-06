@@ -2,7 +2,7 @@
 Libft is a project from the 42 school curriculum that requires you to recreate some of the standard C library functions.
 
 <h2>Files</h2>
-Here is a brief description of each of the .c files in my Libft project:
+Here is a brief description of each of the .c files in my Libft project (some files are in the bonus folder):
 
 <h3>ft_isalpha.c</h3>
 This file contains the implementation of the isalpha function, which checks if a given character is an alphabetic character.
