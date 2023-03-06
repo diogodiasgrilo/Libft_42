@@ -6,7 +6,7 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:44:30 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/06 08:34:30 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/03/06 08:41:03 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void				*ft_calloc(int count, int size);
 char				*ft_strchr(const char *s, int c);
 char				**ft_split(char const *s, char c);
 void				*ft_memset(void *b, int c, int len);
-void				*ft_memchr(const char *s, int c, int n);
+void				*ft_memchr(const void *s, int c, int n);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 void				ft_lstadd_front(t_list **lst, t_list *new);
@@ -56,7 +56,7 @@ char				*ft_strtrim(char const *s1, char const *set);
 void				*ft_memcpy(void *dst, const void *src, int n);
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
-int					ft_memcmp(const char *s1, const char *s2, int n);
+int					ft_memcmp(const void *s1, const void *s2, int n);
 void				*ft_memmove(void *dst, const void *src, int len);
 int					ft_strncmp(const char *s1, const char *s2, int n);
 int					ft_strlcat(char *dst, const char *src, int dstsize);
