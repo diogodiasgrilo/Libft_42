@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int	ft_spaces(char *s1, char *set, int x)
+static int	ft_find_trim_front(char *s1, char *set, int x)
 {
 	int	i;
 	int	count;
@@ -38,7 +38,7 @@ static int	ft_spaces(char *s1, char *set, int x)
 	return (count);
 }
 
-static int	ft_find_next(char *s1, char *set, int x)
+static int	ft_find_trim_end(char *s1, char *set, int x)
 {
 	int	i;
 	int	count;
@@ -77,8 +77,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = ft_strlen(s1);
 	start = s1;
 	end = s1 + len - 1;
-	start += ft_spaces((char *)s1, (char *)set, 0);
-	end -= ft_find_next((char *)s1, (char *)set, 0);
+	start += ft_find_trim_front((char *)s1, (char *)set, 0);
+	end -= ft_find_trim_end((char *)s1, (char *)set, 0);
 	trimmed_len = end - start + 1;
 	if (trimmed_len < 0)
 		trimmed_len = 0;
