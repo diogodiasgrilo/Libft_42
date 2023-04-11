@@ -6,7 +6,7 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:44:04 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:44:06 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:03:49 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	c1 = c;
 	current = 0;
+	if (!s)
+		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] == c1)

@@ -6,9 +6,11 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:44:25 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:44:26 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:03:56 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

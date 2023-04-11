@@ -6,9 +6,11 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:42:52 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:42:53 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:04:00 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, int len)
 {

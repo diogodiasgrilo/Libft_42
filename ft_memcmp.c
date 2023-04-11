@@ -6,9 +6,11 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:42:36 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/06 08:39:45 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:04:09 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, int n)
 {

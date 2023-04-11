@@ -6,9 +6,11 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:43:47 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:43:48 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/11 12:03:57 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {
