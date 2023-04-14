@@ -6,7 +6,7 @@
 /*   By: diogpere <diogpere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 14:43:09 by diogpere          #+#    #+#             */
-/*   Updated: 2023/03/05 14:43:11 by diogpere         ###   ########.fr       */
+/*   Updated: 2023/04/12 10:08:37 by diogpere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	while (*s)
-		ft_putchar_fd(*s++, fd);
+	int	i;
+
+	i = -1;
+	while (s[++i])
+		write(fd, &s[i], 1);
 }
+
+// int main()
+// {
+// 	ft_putstr_fd("abcdef\n1234\t567\nend!", 1);
+// }
